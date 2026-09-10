@@ -1,10 +1,11 @@
-window.PORTFOLIO_I18N = {
+export const translations = {
   en: {
     navAbout: "About",
     navExperience: "Experience",
     navServices: "Services",
     navProjects: "Projects",
     navContact: "Contact",
+    navLabel: "Navigation",
     headerContact: "Let's talk",
     heroGreeting: "Hi, I'm",
     heroRole: "Fullstack Developer",
@@ -69,6 +70,10 @@ window.PORTFOLIO_I18N = {
     projectsTitle: "Selected projects",
     projectsIntro:
       "A selection of public-sector and operational products I have worked on.",
+    galleryControls: "Project image controls",
+    galleryPrevious: "Previous project image",
+    galleryNext: "Next project image",
+    projectOpenImage: "Open project image",
     projectRole: "Role",
     projectVisit: "Visit Site",
     projectViewMore: "View Details",
@@ -214,7 +219,7 @@ window.PORTFOLIO_I18N = {
     contactEmail: "Email",
     contactLinkedIn: "LinkedIn",
     contactGitHub: "GitHub",
-    footerNote: "Designed around the work, built without a framework.",
+    footerNote: "Designed around the work, built with Next.js.",
     footerBack: "Back to top ↑",
     footerText: "© Built by Satrio Nugroho",
   },
@@ -224,6 +229,7 @@ window.PORTFOLIO_I18N = {
     navServices: "Layanan",
     navProjects: "Proyek",
     navContact: "Kontak",
+    navLabel: "Navigasi",
     headerContact: "Mari bicara",
     heroGreeting: "Halo, saya",
     heroRole: "Fullstack Developer",
@@ -289,6 +295,10 @@ window.PORTFOLIO_I18N = {
     projectsTitle: "Proyek pilihan",
     projectsIntro:
       "Pilihan produk sektor publik dan operasional yang pernah saya kerjakan.",
+    galleryControls: "Kontrol gambar proyek",
+    galleryPrevious: "Gambar proyek sebelumnya",
+    galleryNext: "Gambar proyek berikutnya",
+    projectOpenImage: "Buka gambar proyek",
     projectRole: "Peran",
     projectVisit: "Kunjungi Situs",
     projectViewMore: "Lihat Detail",
@@ -432,8 +442,66 @@ window.PORTFOLIO_I18N = {
     contactEmail: "Email",
     contactLinkedIn: "LinkedIn",
     contactGitHub: "GitHub",
-    footerNote: "Dirancang mengikuti karya, dibangun tanpa framework.",
+    footerNote: "Dirancang mengikuti karya, dibangun dengan Next.js.",
     footerBack: "Kembali ke atas ↑",
     footerText: "© Dibangun oleh Satrio Nugroho",
   },
 };
+
+export const navigation = [
+  ["01", "about", "navAbout"],
+  ["02", "experience", "navExperience"],
+  ["03", "projects", "navProjects"],
+  ["04", "contact", "navContact"],
+];
+
+export const experienceKeys = ["exp7", "exp1", "exp2", "exp3", "exp4", "exp5", "exp6"];
+
+export const projects = [
+  {
+    number: "01",
+    meta: "Government · Backend Developer",
+    title: "project5Title",
+    description: "project5Desc",
+    className: "project-card project-card-featured",
+    images: [
+      ["situation-room-1.png", "Situation Room Presiden login screen"],
+      ["situation-room-2.png", "Situation Room Presiden executive dashboard"],
+    ],
+  },
+  {
+    number: "02",
+    meta: "Logistics · Application Developer",
+    title: "project4Title",
+    description: "project4Desc",
+    className: "project-card",
+    images: [["360scalix.png", "360Scalix weighbridge application"]],
+  },
+  {
+    number: "03",
+    meta: "Healthcare · Fullstack Developer",
+    title: "project3Title",
+    description: "project3Desc",
+    className: "project-card",
+    images: [["aimedika.png", "AiMedika clinic information system"]],
+  },
+  {
+    number: "04",
+    meta: "Banking · Backend Developer",
+    title: "project2Title",
+    description: "project2Desc",
+    className: "project-card",
+    images: [
+      ["bsi-risk-1.png", "BSI Risk Management dashboard"],
+      ["bsi-risk-2.png", "BSI Risk Management detail view"],
+    ],
+  },
+  {
+    number: "05",
+    meta: "Government · Backend Developer",
+    title: "project1Title",
+    description: "project1Desc",
+    className: "project-card project-card-wide",
+    images: [["oss-rba.png", "OSS RBA integrated business licensing system"]],
+  },
+];

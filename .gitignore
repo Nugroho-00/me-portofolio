@@ -23,6 +23,7 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # Temporary Files
 *.tmp
@@ -41,7 +42,26 @@ yarn-error.log*
 *.tar
 *.gz
 
-# Optional: Uncomment if using package managers
-# node_modules/
-# package-lock.json
-# yarn.lock
+# Dependencies and Next.js output
+/node_modules/
+/.next/
+/out/
+
+# Tests and build caches
+/coverage/
+.eslintcache
+*.tsbuildinfo
+next-env.d.ts
+
+# Local environment and deployment
+.env*
+!.env.example
+.vercel/
+*.pem
+
+# Local agent tooling
+.codex/
+.agents/
+.forgeguard/
+AGENTS.md
+
